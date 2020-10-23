@@ -6,7 +6,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 *, *:before, *:after {box-sizing: inherit}
 
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+.srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
 *{
@@ -103,7 +103,7 @@ h1 span{
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 80%;
     width: 100%;
     margin: 0 auto;
 }
@@ -112,7 +112,7 @@ h1 span{
 
 .about div {
     width: 50%;
-    height: 650px;
+    height: 80vh;
 }
 
 .imageContainer.right {
@@ -141,10 +141,9 @@ h2 {
 }
 
 .about .textContainer {
-    margin: 20% 20% 0 ;
-    width: 60%;
-    min-width: 450px;
-    padding: 10px;
+    margin: 20% 15%;
+    width: 70%;
+    height: auto;
 }
 
 img {
@@ -226,7 +225,7 @@ button.read:focus {
     text-align: center;
     margin: 0px auto;
     position: relative;
-    top: 100px;
+    top: 22%;
 }
 
 .links span {
@@ -301,14 +300,32 @@ footer .copyright {
 
 /* media query */
 
-@media (max-width: 1200px) {
-    .wrapper,
+@media (max-width: 1024px) {
+    /* .wrapper,
     .about .textContainer {
         max-width: 850px;
-    }
+    } */
 
     body {
         font-size: 16px;
+    }
+
+    h1 {
+        left: initial;
+        right: 5%;
+    }
+
+    .socialMediaContainer {
+        top: 10%;
+        right: 5%;
+    }
+
+    header {
+        background-position: 30% 50%;
+    }
+
+    .headerContainer {
+        max-width: 100%;
     }
 
     .about div {
@@ -337,40 +354,10 @@ footer .copyright {
     }
 
     .about .textContainer {
-        width: 100%;
+        width: 80%;
     }
 
-}
-
-@media (max-width: 900px) {
-
-    .wrapper,
-    .about .textContainer {
-        max-width: 580px;
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    h1 {
-        left: initial;
-        right: 0px;
-    }
-
-    .socialMediaContainer {
-        top: 20%;
-    }
-
-    header {
-        background-position: 30% 50%;
-    }
-
-    .headerContainer {
-        max-width: 100%;
-    }
-
-    h2 {
+        h2 {
         text-align: center;
     }
 
@@ -389,15 +376,15 @@ footer .copyright {
     }
 }
 
+@media (max-width: 900px) {
+
+}
+
 @media (max-width: 580px)
 
 {
     body {
         background-color: cornflowerblue;
-    }
-    .wrapper,
-    .about .textContainer {
-        max-width:300px;
     }
 
     .links ul {
