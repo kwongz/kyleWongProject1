@@ -392,6 +392,9 @@ footer .copyright {
 @media (max-width: 580px)
 
 {
+    body {
+        background-color: cornflowerblue;
+    }
     .wrapper,
     .about .textContainer {
         max-width:300px;
